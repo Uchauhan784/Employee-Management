@@ -71,7 +71,6 @@ dotnet ef migrations add InitialCreate
 ```bash
 dotnet ef database update
 ```
-dotnet ef database update
 
 - Run the API:
 ```bash
