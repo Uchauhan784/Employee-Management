@@ -7,16 +7,16 @@
 
 
 ## Overview
-This is a RESTful API built using .NET 8, designed to manage employee data in an organization. It supports CRUD operations, follows SOLID principles, and includes JWT authentication for secure access.
+This is a RESTful API built with .NET 8 to manage employee data within an organization. It supports CRUD operations, follows SOLID principles, and uses JWT authentication for secure access.
 
 ## Features
 
-**CRUD Operations**: Create, Read, Update, Delete employees.
-**Authentication**: JWT-based authentication for securing endpoints.\
-**Entity Framework Core**: SQL database integration with EF Core.\
-**Dependency Injection**: Modular architecture for maintainability.\
-**Swagger Documentation**: Auto-generated API documentation.
-
+- **CRUD Operations**: Create, Read, Update, Delete employees.
+- **Authentication**: JWT-based authentication for securing endpoints.\
+- **Entity Framework Core**: SQL database integration with EF Core.\
+- **Dependency Injection**: Modular architecture for maintainability.\
+- **Swagger Documentation**: Auto-generated API documentation.
+ 
 
 
 ## Technologies Used
@@ -51,7 +51,7 @@ This is a RESTful API built using .NET 8, designed to manage employee data in an
 - Clone the repository:
 ```bash
  git clone https://github.com/your-repo/EmployeeManagementAPI.git
-cd EmployeeManagementAPI
+ cd EmployeeManagementAPI
 ```
 
 - Install required dependencies:
@@ -67,8 +67,11 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 - Apply Migrations:
 ```bash
 dotnet ef migrations add InitialCreate
+```
+```bash
 dotnet ef database update
 ```
+dotnet ef database update
 
 - Run the API:
 ```bash
@@ -88,8 +91,6 @@ http://localhost:5103/swagger/index.html
 ### Employee Management
 
 - `GET /api/employees` - Get all employees
-
-- `GET /api/employees/{id}` - Get employee by ID
 
 - `POST /api/employees` - Create a new employee
 
